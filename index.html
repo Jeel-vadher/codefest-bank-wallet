@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>bank wallet</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* header {
+            background-color: #2c3e50;
+            color: #fff;
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+        }
+
+        .logo img {
+            height: 50px;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        nav li {
+            margin-left: 20px;
+            font-size: larger;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            color: #f1c40f;
+        }
+ */
+
+        /* Header Styles */
+        header {
+            background-color: #2c3e50;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            padding: 10px;
+            box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        .logo img {
+            height: 50px;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        nav li {
+            margin-left: 20px;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            padding: 10px 15px;
+            border-radius: 5px;
+            transition: background-color 0.2s ease;
+        }
+
+        nav a:hover {
+            background-color: #34495e;
+        }
+
+        main {
+            margin: 50px auto;
+            max-width: 800px;
+        }
+
+        h1 {
+            font-size: 40px;
+            margin-bottom: 20px;
+            background-color: #e67e22;
+            text-align: center;
+            border-style: ridge;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 1.5;
+            margin-bottom: 40px;
+        }
+
+        .accounts h2 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        .accounts ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .accounts li {
+            margin-bottom: 10px;
+        }
+
+        .accounts li a {
+            display: block;
+            padding: 10px;
+            background-color: #f1c40f;
+            color: #fff;
+            border-radius: 5px;
+            transition: background-color 0.2s ease;
+        }
+
+        .accounts li a:hover {
+            background-color: #e67e22;
+        }
+
+        .transactions h2 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        .transactions form label {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        .transactions form select,
+        .transactions form input[type="text"] {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            width: 100%;
+            margin-bottom: 20px;
+            font-size: 16px;
+        }
+
+        .transactions form input[type="submit"] {
+            padding: 10px 20px;
+            background-color: #f1c40f;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.2s ease;
+        }
+
+        .transactions form input[type="submit"]:hover {
+            background-color: #e67e22;
+        }
+
+        /* Footer Styles */
+        footer {
+            background-color: #2c3e50;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="Wallet Bank Logo" />
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Accounts</a></li>
+                <li><a href="#">Transactions</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Welcome to Wallet Bank</h1>
+        <p>
+            At Wallet Bank, we provide secure and convenient banking services to
+            help you manage your finances.
+        </p>
+        <div class="accounts">
+            <h2>Accounts</h2>
+            <ul>
+                <li><a href="#">Checking Account</a></li>
+                <li><a href="#">Savings Account</a></li>
+                <li><a href="#">Credit Card</a></li>
+                <li><a href="#">Loan</a></li>
+            </ul>
+        </div>
+        <div class="transactions">
+            <h2>Transactions</h2>
+            <form>
+                <label for="from-account">From Account:</label>
+                <select id="from-account" name="from-account">
+                    <option value="checking-account">Checking Account</option>
+                    <option value="savings-account">Savings Account</option>
+                </select><br /><br />
+                <label for="to-account">To Account:</label>
+                <input type="text" id="to-account" name="to-account" /><br /><br />
+                <label for="amount">Amount:</label>
+                <input type="text" id="amount" name="amount" /><br /><br />
+                <input type="submit" value="Submit" />
+            </form>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2023 Wallet Bank. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
